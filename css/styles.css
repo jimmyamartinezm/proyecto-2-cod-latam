@@ -4,7 +4,6 @@
 /* Importar aquí la font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
 */
@@ -118,6 +117,17 @@ p{
     
 }
 
+
+.menu-item{
+    padding: 16px;
+    
+} 
+
+.active{
+    background-color: #C3D5C5;
+    transition: 0.5s;
+}
+
 .boton_cv{
     text-align: center;
 
@@ -178,3 +188,47 @@ margin: 20px 20px;
 #inicio{
     justify-content: space-around;
 }
+
+.boton_cv a:hover {
+
+    background-color: #57886C;
+    transition: 0.5s;
+
+}
+
+
+
+/* Media query */
+@media (min-width: 1024px) {
+
+    #inicio{
+    flex-direction:row;
+    padding-top: 80px;
+    }
+
+    .boton_cv{
+        text-align: left;
+    
+    }
+
+    h1{
+        font-size:48px;
+        text-align: left;
+    }
+    h2{
+        font-size:32px;
+    }
+
+    .presentacion{
+        width:50%;
+        text-align:left;
+    }
+
+    .presentacion p{
+        text-align: left;
+    }
+
+    
+    
+
+  }

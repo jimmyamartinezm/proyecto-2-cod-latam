@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Proyecto 1 -Jimmy Martinez</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 <body>
     <header>
         <a href="#inicio"><img src="img/logo.png" alt="Logo" class="logo"></a>    
-        <nav  class="menu">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#contacto"></a>Contacto</a></li>
+        <nav  >
+            <ul class="menu">
+                <li class="menu-item" ><a href="#inicio" class="active">Inicio</a></li>
+                <li class="menu-item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav> 
     </header>
@@ -26,13 +29,13 @@
             <figure class="imagen_inicio">
                 <img src="img/imagen_inicio.webp"  alt="Imagen Inicio">
             </figure>
-            <article>
+            <article class="presentacion">
             <h1 class="titulo_principal">Bienvenido</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a erat ex. Morbi laoreet sollicitudin odio, finibus feugiat ipsum. Maecenas sit amet tellus maximus, sodales erat vitae, gravida massa. Nulla ultricies ante sed justo placerat consequat. Ut placerat molestie turpis, at ornare odio bibendum eu. Pellentesque lacinia sodales mi non tristique. Nullam pulvinar erat venenatis egestas finibus. Sed elementum lorem justo, quis porta elit ultrices sit amet. Nunc libero turpis, finibus eu volutpat vitae, pharetra in ante.
             </p>
             <div class="boton_cv">
-            <a href="" >Descargar CV</a>
+            <a href="" onclick="descargar()">Descargar CV</a>
         </div>
             </article>
         </section>
@@ -50,7 +53,9 @@
         </section>
     </main>
     <footer>
-        <p>Código Pa' Lante</p>
+        <p>Código Pa' Lante  <span id="fecha"></span></p>
     </footer>
+        <!-- JS -->
+        <script src="./js/main.js"></script>
 </body>
 </html>
