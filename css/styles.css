@@ -114,7 +114,7 @@ p{
 
 .menu li a{
     padding: 16px;
-    
+    border-radius: 5px;
 }
 
 
@@ -147,7 +147,7 @@ p{
 
 #contacto{
     background-color: #76A78C;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 .iconos{
@@ -190,7 +190,7 @@ margin: 20px 20px;
 }
 
 .boton_cv a:hover {
-
+    
     background-color: #57886C;
     transition: 0.5s;
 
@@ -228,7 +228,10 @@ margin: 20px 20px;
         text-align: left;
     }
 
-    
+    .imagen_inicio img{
+        margin-top: 20px;
+        border: 2px solid;
+    }
     
 
   }
